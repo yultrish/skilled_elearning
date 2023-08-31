@@ -104,7 +104,6 @@ p{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
   margin: 0 1rem;
-
 }
 
 .icon{
@@ -224,13 +223,10 @@ footer button{
     .cards .card:first-child{
         padding: 2rem 1rem;
         margin-bottom: unset;
-    }
-
-    .unique{
-        margin-bottom: unset;
-      font-size: 0.3rem;
-      display: flex;
-      justify-content: center;    
+        height: 90%;
+        font-size: 0.3rem;
+        display: flex;
+        justify-content: center; 
     }
 
     .card{
@@ -290,17 +286,30 @@ footer button{
 
     .skill-budget-img{
         grid-template-columns: 54.5% 40%;
+        /* position: relative; */
     }
 
     .skill-budget-img h3{
         font-size: 2.9rem;
     }
 
-     .hero-tab{
+    .hero-tab{
+        display: none;
+    }
+
+     .hero-desktop{
         display: block;
         position: absolute;
-        top: -5%;
-        right: -70px;  
+        top: -40%;
+        right: -10%;
+        transform: translate(52%, 0%);
+        
+    }
+
+    .hero-desktop img{
+        width: 68%;
+        height: 68%;
+
     }
 
     /* .hero-desktop{
@@ -311,12 +320,17 @@ footer button{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     padding: 0 3rem;
-    margin-top: 2rem;
+    margin-top: 4rem;
    }
-  
+
+   .card:first-child{
+    background-color: #99a0ff;
+    margin: 0.rem;
+    height: 90%;
+   }
+
   .card p{
-    font-size: 0.9rem;
-    
+    font-size: 0.9rem; 
   }
 
   .card h4:hover{
