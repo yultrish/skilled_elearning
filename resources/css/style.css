@@ -7,7 +7,7 @@
 }
 
 html{
-    font-family: Plus Jakarta Sans;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     overflow-x: hidden;   
 }
 
@@ -273,9 +273,9 @@ footer button{
 
 /* large screen */
 @media screen and (min-width:989px){
-    html{
+    /* html{
         background-color: #fff;
-    }
+    } */
    
     body{
          width: 77%;
@@ -295,11 +295,10 @@ footer button{
         /* background-color: #666ca3; */
     }
 
-     .header button:hover{
-        /* margin-right: 4rem; */
-        cursor: pointer;
-        background-color: #666ca3;
-    }
+   .header a button:hover {
+    background-color: #666ca3;
+    cursor: pointer;
+}
     
     .skill-budget{
         padding-left:  3rem;
