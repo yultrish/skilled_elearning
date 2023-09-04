@@ -6,17 +6,24 @@
     box-sizing: border-box;
 }
 
-body{
+html{
     font-family: Plus Jakarta Sans;
     overflow-x: hidden;   
 }
 
-.container{
-    background-color: #fff;
+body{
+     background-color: #fff;
     background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
     overflow-x: hidden;
 }
+
+/* .container{
+    background-color: #fff;
+    background-image: linear-gradient(to bottom, #ffffff, #f2f2f2);
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    overflow-x: hidden;
+} */
 
 a{
     text-decoration: none;
@@ -53,6 +60,7 @@ p{
 .header button{
     background-color: #13183f;
     color: #ffffff;
+    cursor: pointer;
 }
 
 .hero-desktop, .hero-tab{
@@ -92,7 +100,7 @@ p{
     text-align: left;
     box-shadow: unset;
     border: unset;
-    margin-bottom: 1.5rem;
+    /* margin-bottom: 2rem; */
 }
 
 .card{
@@ -104,6 +112,7 @@ p{
   box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
   position: relative;
   margin: 0 1rem;
+  margin-bottom: 2.2rem;
 }
 
 .icon{
@@ -165,10 +174,12 @@ footer button{
 
 /* tablet */
 @media screen and (min-width:768px) {
-    .container{
+    body{
         border: 5px solid #ffff;
-        /* width: 90%; */
     }
+    /* .container{
+        border: 5px solid #ffff;
+    } */
 
     .hero-mobile{
         display: none;
@@ -262,14 +273,18 @@ footer button{
 
 /* large screen */
 @media screen and (min-width:989px){
-    body{
+    html{
         background-color: #fff;
     }
-
-    .container{
-        width: 77%;
+   
+    body{
+         width: 77%;
         margin: 2rem auto;
     }
+    /* .container{
+        width: 77%;
+        margin: 2rem auto;
+    } */
 
     .header{
         margin: 0 2rem;
@@ -277,6 +292,12 @@ footer button{
 
     .header button{
         margin-right: 4rem;
+        /* background-color: #666ca3; */
+    }
+
+     .header button:hover{
+        /* margin-right: 4rem; */
+        cursor: pointer;
         background-color: #666ca3;
     }
     
@@ -344,6 +365,11 @@ footer button{
   footer button{
     margin-right: 2.7rem;
   }
+
+  /* button:hover{
+     cursor: pointer;
+     background-color: #666ca3;
+  } */
   
   .skill-budget-img button:hover{
        background-image: linear-gradient(to bottom, #ff70b3, #ffb78b);
@@ -354,5 +380,6 @@ footer button{
      background-image: linear-gradient(to bottom, #99a0ff, #ff70b3);
      cursor: pointer;
   }
+
  
    }
