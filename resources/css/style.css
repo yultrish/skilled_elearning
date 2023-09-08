@@ -8,7 +8,7 @@
 
 html{
     font-family: 'Plus Jakarta Sans', sans-serif;
-    overflow-x: hidden;   
+    overflow-x: hidden; 
 }
 
 body{
@@ -273,13 +273,13 @@ footer button{
 
 /* large screen */
 @media screen and (min-width:989px){
-    /* html{
+    html{
         background-color: #fff;
-    } */
+    }
    
     body{
          width: 77%;
-        margin: 2rem auto;
+        margin: 0 auto;
     }
     /* .container{
         width: 77%;
