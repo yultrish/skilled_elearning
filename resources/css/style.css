@@ -380,5 +380,11 @@ footer button{
      cursor: pointer;
   }
 
- 
+ .header-btn{
+    background-color: #13183f;
+ }
+
+ .header-btn:hover{
+    background-color: #666ca3;
+ }
    }
