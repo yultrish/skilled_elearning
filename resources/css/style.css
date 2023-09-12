@@ -113,6 +113,7 @@ p{
   position: relative;
   margin: 0 1rem;
   margin-bottom: 2.2rem;
+  border-radius: 7px;
 }
 
 .icon{
@@ -121,12 +122,12 @@ p{
     left: 7%;
 }
 
-.card p, .card h3:first-child, .skill-budget-img p{
+/* .card p, .card h3:first-child, .skill-budget-img p{
      display: -webkit-box;
     -webkit-line-clamp: 3; 
     -webkit-box-orient: vertical;
      overflow: hidden;
-   }
+   } */
 
 
 .card h3{
@@ -234,7 +235,7 @@ footer button{
     .cards .card:first-child{
         padding: 2rem 1rem;
         margin-bottom: unset;
-        height: 90%;
+        /* height: 90%; */
         font-size: 0.3rem;
         display: flex;
         justify-content: center; 
@@ -248,12 +249,12 @@ footer button{
         margin: 0 1rem;
     }
 
-   .card p, .card h3:first-child, .skill-budget-img p{
+   /* .card p, .card h3:first-child, .skill-budget-img p{
         display: -webkit-box;
         -webkit-line-clamp: 3; 
         -webkit-box-orient: vertical;
         overflow: hidden;
-   }
+   } */
 
    .card p{
         font-size: 1rem;
@@ -277,23 +278,17 @@ footer button{
         background-color: #fff;
     }
    
-    body{
-         width: 77%;
-        margin: 0 auto;
-    }
-    /* .container{
-        width: 77%;
-        margin: 2rem auto;
-    } */
+ 
 
     .header{
-        margin: 0 2rem;
+        margin: 0 3.2rem;
     }
 
     .header button{
         margin-right: 4rem;
         /* background-color: #666ca3; */
     }
+
 
    .header a button:hover {
     background-color: #666ca3;
@@ -313,6 +308,11 @@ footer button{
         font-size: 2.9rem;
     }
 
+    .skill-budget-img p{
+        font-size: 1.5rem;
+        line-height: 2.4rem;
+    }
+
     .hero-tab{
         display: none;
     }
@@ -321,14 +321,14 @@ footer button{
         display: block;
         position: absolute;
         top: -40%;
-        right: -10%;
-        transform: translate(52%, 0%);
+        right: 0%;
+        transform: translate(50%, 0%);
         
     }
 
     .hero-desktop img{
-        width: 68%;
-        height: 68%;
+        width: 100%;
+        height: 110vh;
 
     }
 
@@ -343,14 +343,30 @@ footer button{
     margin-top: 4rem;
    }
 
-   .card:first-child{
-    background-color: #99a0ff;
-    margin: 0.rem;
-    height: 90%;
+  .card:first-child{
+    width: 80%;
+    height: 80%;
+}
+   .cards .card p:first-child{
+    font-size: 0.5rem;
+    padding: 6rem 3rem;
+   /* height: 50vh; */
    }
 
+  .card{
+     padding-bottom: 4rem;
+     height: 80%;
+  }
+            
   .card p{
-    font-size: 0.9rem; 
+    font-size: 1.4rem; 
+    line-height: 2.3rem;
+    font-weight: lighter;
+    
+  }
+
+  .design, .photo{
+    margin-top: 2.3rem;
   }
 
   .card h4:hover{
@@ -387,4 +403,6 @@ footer button{
  .header-btn:hover{
     background-color: #666ca3;
  }
+
+
    }
